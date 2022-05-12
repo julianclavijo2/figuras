@@ -21,5 +21,10 @@ console.log('los lados del triangulo son :'
 + baseTriangulo
 );
 
+const alturatriangulo = 5.5
+console.log('la altura del triangulo  mide : ' + alturatriangulo);
+
+const areaTriangulo = (baseTriangulo * alturatriangulo) / 2;
+
 
 
