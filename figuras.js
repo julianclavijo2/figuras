@@ -1,10 +1,36 @@
-const ladoCuadrado = 5;
+
+const areaCuadrado = (opt) => {
+    const ladoCuadrado = document.getElementById('ladoCuadrado');
+    switch (opt) {
+        case 1:
+            let areCuadrado = ladoCuadrado * ladoCuadrado;
+            document.getElementById('body').style.zIndex = '-1';
+            document.getElementById('popup').style.display = 'block';
+
+            break;
+            case 2:
+                const perimetroCuadrado = ladoCuadrado * 4;
+                return perimetroCuadrado;
+                break;
+    
+        default:
+            break;
+    }
+}
+
+const close = () => {
+    console.log('hola');
+    document.getElementById('popup').style.display = 'none';
+}
+
+
+/* const ladoCuadrado = 5;
 
 console.group('Cuadrado');
 
 console.log('los lados del cuadrado miden : ' + ladoCuadrado);
 
-const perimetroCuadrado = ladoCuadrado * 4;
+
 
 console.log('perimetro del cuadrado miden : ' + perimetroCuadrado);
 
@@ -38,9 +64,7 @@ console.log('El perimetro del triangulo mide : ' + perimetroTriangulo);
 const areaTriangulo = (baseTriangulo * alturatriangulo) / 2;
 
 console.log('El area del triangulo mide : ' + areaTriangulo);
-
-
 console.groupEnd();
-
+ */
 
 
