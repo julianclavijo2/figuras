@@ -40,6 +40,26 @@ const areaTriangulo = (baseTriangulo * alturatriangulo) / 2;
 console.log('El area del triangulo mide : ' + areaTriangulo);
 
 
+console.group("Circulos");
+const radioCirculo = 4;
+const diametroCirculo = radioCirculo * 2;
+const PI = Math.PI;
+
+const perimetroCirculo = diametroCirculo * PI;
+const areaCirculo = (radioCirculo * radioCirculo) * PI;
+
+console.log("El radio del circulo es : " + radioCirculo + "cm");
+
+console.log("El diametro del circulo es : " + diametroCirculo + "cm");
+
+console.log('PI es :' + PI + "cm");
+
+console.log("El area del circulo es : " + areaCirculo + "cm");
+
+console.log("El perimetro del circulo es : " + perimetroCirculo + "cm");
+
+
+
 console.groupEnd();
 
 
