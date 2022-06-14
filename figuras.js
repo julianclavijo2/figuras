@@ -1,10 +1,61 @@
-const ladoCuadrado = 5;
+
+const operationSquare = (opt) => {
+    const ladoCuadrado = document.getElementById('ladoCuadrado');
+    document.getElementsByClassName('body-content')[0].replaceChildren();
+    switch (opt) {
+        case 1:
+            let areCuadrado = ladoCuadrado.value * ladoCuadrado.value;
+            document.getElementById('popup').style.display = 'block';
+
+            let h1 = document.createElement('h1');
+            h1.innerHTML = 'El area es del cuadrado es:';
+            let h1Result = document.createElement('h1');
+            h1Result.innerHTML = areCuadrado;
+            h1Result.style.color = '#5f9ea0';
+
+            document.getElementsByClassName('body-content')[0].append(h1);
+            document.getElementsByClassName('body-content')[0].append(h1Result);
+
+
+            break;
+        case 2:
+            const perimetroCuadrado = ladoCuadrado.value * 4;
+
+            document.getElementById('popup').style.display = 'block';
+
+            let h1Perimetro = document.createElement('h1');
+            h1Perimetro.innerHTML = 'El perimetro del cuadrado es:';
+            let h1ResultPerimetro = document.createElement('h1');
+            h1ResultPerimetro.innerHTML = perimetroCuadrado;
+            h1ResultPerimetro.style.color = '#5f9ea0';
+
+            document.getElementsByClassName('body-content')[0].append(h1Perimetro);
+            document.getElementsByClassName('body-content')[0].append(h1ResultPerimetro);
+
+
+
+      
+            break;
+
+        default:
+            break;
+    }
+}
+
+const cerrar = () => {
+    console.log('hola');
+    let popup = document.getElementById('popup');
+    popup.style.display = 'none';
+}
+
+
+/* const ladoCuadrado = 5;
 
 console.group('Cuadrado');
 
 console.log('los lados del cuadrado miden : ' + ladoCuadrado);
 
-const perimetroCuadrado = ladoCuadrado * 4;
+
 
 console.log('perimetro del cuadrado miden : ' + perimetroCuadrado);
 
@@ -61,6 +112,6 @@ console.log("El perimetro del circulo es : " + perimetroCirculo + "cm");
 
 
 console.groupEnd();
-
+ */
 
 
