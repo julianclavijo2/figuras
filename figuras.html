@@ -46,7 +46,7 @@
                             <label for="Lado">Escribe cuanto mide el lado de tu cuadrado:</label>
                             <input type="number" name="ladoCuadrado" id="ladoCuadrado"> 
                             <button type="button" onclick="operationSquare(1)">Calcular Area</button> 
-                            <button type="submit" onclick="operationSquare(2)">Calcular Perimetro</button>
+                            <button type="button" onclick="operationSquare(2)">Calcular Perimetro</button>
                         </form>
 
                     </div>
@@ -54,12 +54,13 @@
                 <div class="col-sm-12 col-md-12 col-lg-6 border">
                     <div class="formSquare">
                         <img src="./imagenes/triangulo.png" alt="">
-                        <p>Cuadrado</p>
+                        <p>Triangulo</p>
                         <form action="">
                             <label for="Lado">Escribe cuanto mide el lado de tu triangulo:</label>
-                            <input type="number" name="ladoCuadrado" id="ladoCuadrado"> 
-                            <button type="button" onclick="areaCuadrado(1)">Calcular Area</button> 
-                            <button type="submit">Calcular Perimetro</button>
+                            <input type="number" name="alturaTriangulo" id="alturaTriangulo" placeholder="Digite la altura">
+                            <input type="number" name="baseTriangulo" id="baseTriangulo" placeholder="Digite la base">  
+                            <button type="button" onclick="operationTriangulo(1)">Calcular Area</button> 
+                            <button type="button" onclick="operationTriangulo(2)">Calcular Perimetro</button>
                         </form>
 
                     </div>
@@ -73,12 +74,12 @@
                 <div class="col-sm-12 col-md-12 col-lg-12 border">
                     <div class="formSquare">
                         <img src="./imagenes/circulo.png" alt="">
-                        <p>Cuadrado</p>
+                        <p>Circulo</p>
                         <form action="">
                             <label for="Lado">Escribe cuanto mide el lado de tu cuadrado:</label>
                             <input type="number" name="ladoCuadrado" id="ladoCuadrado"> 
-                            <button type="submit">Calcular Area</button> 
-                            <button type="submit">Calcular Perimetro</button>
+                            <button type="button">Calcular Area</button> 
+                            <button type="button">Calcular Perimetro</button>
                         </form>
 
                     </div>

@@ -42,8 +42,93 @@ const operationSquare = (opt) => {
     }
 }
 
+
+
+const operationTriangulo = (opt) => {
+    const alturaTriangulo = document.getElementById('alturaTriangulo');
+    const baseTriangulo = document.getElementById('baseTriangulo');
+    document.getElementsByClassName('body-content')[0].replaceChildren();
+    switch (opt) {
+        case 1:
+            let areaTriangulo = alturaTriangulo.value * baseTriangulo.value / 2;
+            document.getElementById('popup').style.display = 'block';
+
+            let h1 = document.createElement('h1');
+            h1.innerHTML = 'El area es del triangulo es:';
+            let h1Result = document.createElement('h1');
+            h1Result.innerHTML = areaTriangulo;
+            h1Result.style.color = '#5f9ea0';
+
+            document.getElementsByClassName('body-content')[0].append(h1);
+            document.getElementsByClassName('body-content')[0].append(h1Result);
+
+
+            break;
+        case 2:
+            const perimetroTriangulo = baseTriangulo.value * 3;
+            
+
+            document.getElementById('popup').style.display = 'block';
+
+            let h1Perimetro = document.createElement('h1');
+            h1Perimetro.innerHTML = 'El perimetro del triangulo es:';
+            let ResultPerimetro = document.createElement('h1');
+            ResultPerimetro.innerHTML = perimetroTriangulo;
+            ResultPerimetro.style.color = '#5f9ea0';
+
+            document.getElementsByClassName('body-content')[0].append(h1Perimetro);
+            document.getElementsByClassName('body-content')[0].append(ResultPerimetro);
+
+            break;
+
+        default:
+            break;
+    }
+}
+
+const operationCirculo = (opt) => {
+    const alturaTriangulo = document.getElementById('alturaTriangulo');
+    const baseTriangulo = document.getElementById('baseTriangulo');
+    document.getElementsByClassName('body-content')[0].replaceChildren();
+    switch (opt) {
+        case 1:
+            let areaTriangulo = alturaTriangulo.value * baseTriangulo.value / 2;
+            document.getElementById('popup').style.display = 'block';
+
+            let h1 = document.createElement('h1');
+            h1.innerHTML = 'El area es del triangulo es:';
+            let h1Result = document.createElement('h1');
+            h1Result.innerHTML = areaTriangulo;
+            h1Result.style.color = '#5f9ea0';
+
+            document.getElementsByClassName('body-content')[0].append(h1);
+            document.getElementsByClassName('body-content')[0].append(h1Result);
+
+
+            break;
+        case 2:
+            const perimetroTriangulo = baseTriangulo.value * 3;
+            
+
+            document.getElementById('popup').style.display = 'block';
+
+            let h1Perimetro = document.createElement('h1');
+            h1Perimetro.innerHTML = 'El perimetro del triangulo es:';
+            let ResultPerimetro = document.createElement('h1');
+            ResultPerimetro.innerHTML = perimetroTriangulo;
+            ResultPerimetro.style.color = '#5f9ea0';
+
+            document.getElementsByClassName('body-content')[0].append(h1Perimetro);
+            document.getElementsByClassName('body-content')[0].append(ResultPerimetro);
+
+            break;
+
+        default:
+            break;
+    }
+}
+
 const cerrar = () => {
-    console.log('hola');
     let popup = document.getElementById('popup');
     popup.style.display = 'none';
 }
