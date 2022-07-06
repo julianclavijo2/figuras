@@ -30,15 +30,16 @@
     </div>
 
 
+    <div class="container">
 
-    <div class="row border">
+
         <div class="title">
             <h1>Figuras Geometricas</h1>
             <p>Confiable y diseñado para tu uso diario.</p>
-        </div>
+    
         <div class="body" id="body">
             <div class="row">
-                <div class="col-sm-12 col-md-12 col-lg-6 border">
+                <div class="col-sm-12 col-md-12 col-lg-6 ">
                     <div class="formSquare">
                         <img src="./imagenes/cuadrado.png" alt="">
                         <p>Cuadrado</p>
@@ -51,7 +52,7 @@
 
                     </div>
                 </div>
-                <div class="col-sm-12 col-md-12 col-lg-6 border">
+                <div class="col-sm-12 col-md-12 col-lg-6 ">
                     <div class="formSquare">
                         <img src="./imagenes/triangulo.png" alt="">
                         <p>Triangulo</p>
@@ -71,15 +72,16 @@
             </div>
 
             <div class="row">
-                <div class="col-sm-12 col-md-12 col-lg-12 border">
+                <div class="col-sm-12 col-md-12 col-lg-12 ">
                     <div class="formSquare">
                         <img src="./imagenes/circulo.png" alt="">
                         <p>Circulo</p>
                         <form action="">
                             <label for="Lado">Escribe cuanto mide el lado de tu cuadrado:</label>
-                            <input type="number" name="ladoCuadrado" id="ladoCuadrado"> 
-                            <button type="button">Calcular Area</button> 
-                            <button type="button">Calcular Perimetro</button>
+                            <input type="number" name="diametroCirculo" id="diametroCirculo" placeholder="Digite diametro"> 
+                            <input type="number" name="radioCirculo" id="radioCirculo" placeholder="Digite el radio"> 
+                            <button type="button" onclick="operationCirculo(1)">Calcular Radio</button> 
+                            <button type="button" onclick="operationCirculo(2)">Calcular Area</button>
                         </form>
 
                     </div>
@@ -90,9 +92,9 @@
      
     </div>
 
+</div>
 
-
-
+<br><br><br>
 
 
 

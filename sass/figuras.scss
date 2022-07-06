@@ -8,10 +8,35 @@
     src: url('/Fonts/Lato-Italic.ttf') format('truetype');
 }
 
-.row {
-    margin-left: 0;
-    margin-right: 0;
+// variables:
+$breakpoint-xs: 575.98px;
+$breakpoint-sm: 576px;
+$breakpoint-md: 767.98px;
+$breakpoint-md1: 768px;
+$breakpoint-lg: 991.98px;
+$breakpoint-lg1: 992px;
+$breakpoint-xl: 1199.98px;
+$breakpoint-xsl: 1200px;
+
+@mixin media($media) {
+  @if $media == xs {
+    @media (max-width: $breakpoint-xs) { @content; }
+  }
+  @else if $media == sm {
+    @media (min-width: $breakpoint-sm) and (max-width: $breakpoint-md) { @content; }
+  }
+  @else if $media == md {
+    @media (min-width: $breakpoint-md1) and (max-width: $breakpoint-lg) { @content; }
+  }
+  @else if $media == lg {
+    @media (min-width: $breakpoint-lg1) and (max-width: $breakpoint-xl) { @content; }
+  }
+  @else if $media == xl {
+    @media (min-width: $breakpoint-xsl) { @content; }
+  }
 }
+
+
 
 %ptext {
     font-family: 'Lato-Italic';
@@ -90,16 +115,27 @@
 
 .body {
     width: 100%;
-    background-color: #f4f4f4;
+    background: whitw;
+  
 
     .formSquare {
-        width: 100%;
+        max-width: 500px;
         display: flex;
         flex-direction: column;
         padding: 25px;
+        margin: 10px;
+        background-color: #f4f4f4;
+        height: 400px;
+        border-radius: 8px;
+        margin-left: auto;
+        margin-right: auto;
 
         img {
             width: 50px;
+            @include media(xs){
+                margin-left: auto;
+                margin-right: auto;
+            }
         }
 
         label {
@@ -110,6 +146,10 @@
             @extend %ptext;
             font-weight: bold;
             margin-top: 15px;
+            @include media(xs){
+                text-align: center;
+
+            }
         }
 
         form {
