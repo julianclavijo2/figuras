@@ -46,7 +46,9 @@
                         <form action="">
                             <label for="Lado">Escribe cuanto mide el lado de tu cuadrado:</label>
                             <input type="number" name="ladoCuadrado" id="ladoCuadrado"> 
-                            <button type="button" onclick="operationSquare(1)">Calcular Area</button> 
+                            <label for="" class="warning warningCuadrado">* Ingresa un valor obligatorio &#9747;</label> 
+                            <button type="button" onclick="operationSquare(1)">Calcular Area</button>
+                           
                             <button type="button" onclick="operationSquare(2)">Calcular Perimetro</button>
                         </form>
 
@@ -60,6 +62,7 @@
                             <label for="Lado">Escribe cuanto mide el lado de tu triangulo:</label>
                             <input type="number" name="alturaTriangulo" id="alturaTriangulo" placeholder="Digite la altura">
                             <input type="number" name="baseTriangulo" id="baseTriangulo" placeholder="Digite la base">  
+                            <label for="" class="warning warningTriangulo">* Ingresa un valor obligatorio &#9747;</label> 
                             <button type="button" onclick="operationTriangulo(1)">Calcular Area</button> 
                             <button type="button" onclick="operationTriangulo(2)">Calcular Perimetro</button>
                         </form>
@@ -79,7 +82,8 @@
                         <form action="">
                             <label for="Lado">Escribe cuanto mide el lado de tu cuadrado:</label>
                             <input type="number" name="diametroCirculo" id="diametroCirculo" placeholder="Digite diametro"> 
-                            <input type="number" name="radioCirculo" id="radioCirculo" placeholder="Digite el radio"> 
+                            <input type="number" name="radioCirculo" id="radioCirculo" placeholder="Digite el radio">
+                            <label for="" class="warning warningCirculo">* Ingresa un valor obligatorio &#9747;</label>  
                             <button type="button" onclick="operationCirculo(1)">Calcular Radio</button> 
                             <button type="button" onclick="operationCirculo(2)">Calcular Area</button>
                         </form>

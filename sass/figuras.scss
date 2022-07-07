@@ -19,21 +19,35 @@ $breakpoint-xl: 1199.98px;
 $breakpoint-xsl: 1200px;
 
 @mixin media($media) {
-  @if $media == xs {
-    @media (max-width: $breakpoint-xs) { @content; }
-  }
-  @else if $media == sm {
-    @media (min-width: $breakpoint-sm) and (max-width: $breakpoint-md) { @content; }
-  }
-  @else if $media == md {
-    @media (min-width: $breakpoint-md1) and (max-width: $breakpoint-lg) { @content; }
-  }
-  @else if $media == lg {
-    @media (min-width: $breakpoint-lg1) and (max-width: $breakpoint-xl) { @content; }
-  }
-  @else if $media == xl {
-    @media (min-width: $breakpoint-xsl) { @content; }
-  }
+    @if $media ==xs {
+        @media (max-width: $breakpoint-xs) {
+            @content;
+        }
+    }
+
+    @else if $media ==sm {
+        @media (min-width: $breakpoint-sm) and (max-width: $breakpoint-md) {
+            @content;
+        }
+    }
+
+    @else if $media ==md {
+        @media (min-width: $breakpoint-md1) and (max-width: $breakpoint-lg) {
+            @content;
+        }
+    }
+
+    @else if $media ==lg {
+        @media (min-width: $breakpoint-lg1) and (max-width: $breakpoint-xl) {
+            @content;
+        }
+    }
+
+    @else if $media ==xl {
+        @media (min-width: $breakpoint-xsl) {
+            @content;
+        }
+    }
 }
 
 
@@ -56,15 +70,16 @@ $breakpoint-xsl: 1200px;
 
             width: 300px;
             max-width: 100%;
-            height: 200px;
+            height: 156px;
             background-color: #f4f4f4;
             position: relative;
             left: calc(50% - 150px);
-            top: calc(50% - 100px);
-            border-radius: 6px;
+            top: calc(50% - 78px);
+            border-radius: 1px;
             display: flex;
             flex-direction: column;
             padding: 15px;
+            box-shadow: 0px 0px 44px 1px rgba(0, 0, 0, 0.75);
 
             img {
                 width: 25px;
@@ -74,10 +89,11 @@ $breakpoint-xsl: 1200px;
                 left: 90%;
                 top: 1%;
                 cursor: pointer;
-                &:hover{
+
+                &:hover {
                     transition: all 1s;
                     transform: scale(1.1);
-            }
+                }
             }
 
             .body-content {
@@ -116,7 +132,7 @@ $breakpoint-xsl: 1200px;
 .body {
     width: 100%;
     background: whitw;
-  
+
 
     .formSquare {
         max-width: 500px;
@@ -132,7 +148,8 @@ $breakpoint-xsl: 1200px;
 
         img {
             width: 50px;
-            @include media(xs){
+
+            @include media(xs) {
                 margin-left: auto;
                 margin-right: auto;
             }
@@ -146,7 +163,8 @@ $breakpoint-xsl: 1200px;
             @extend %ptext;
             font-weight: bold;
             margin-top: 15px;
-            @include media(xs){
+
+            @include media(xs) {
                 text-align: center;
 
             }
@@ -169,6 +187,13 @@ $breakpoint-xsl: 1200px;
                     transition: all 1s;
                     transform: scale(1.02);
                 }
+            }
+
+            .warning {
+                font-size: 13px;
+                color: red;
+                margin-top: 5px;
+                display: none;
             }
         }
     }
