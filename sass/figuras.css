@@ -1,11 +1,11 @@
 @font-face {
   font-family: 'Lato';
-  src: url("/Fonts/Lato-Bold.ttf") format("truetype");
+  src: url("../Fonts/Lato-Bold.ttf") format("truetype");
 }
 
 @font-face {
   font-family: 'Lato-Italic';
-  src: url("/Fonts/Lato-Italic.ttf") format("truetype");
+  src: url("../Fonts/Lato-Italic.ttf") format("truetype");
 }
 
 .title p, .body .formSquare label, .body .formSquare p {
