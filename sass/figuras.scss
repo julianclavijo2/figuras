@@ -1,10 +1,10 @@
 @font-face {
-    font-family: 'Lato';
+    font-family: Lato;
     src: url('../Fonts/Lato-Bold.ttf') format('truetype');
 }
 
 @font-face {
-    font-family: 'Lato-Italic';
+    font-family: Lato-Italic;
     src: url('../Fonts/Lato-Italic.ttf') format('truetype');
 }
 
@@ -39,7 +39,7 @@ $breakpoint-xsl: 1200px;
 
 
 %ptext {
-    font-family: 'Lato-Italic';
+    font-family: Lato-Italic;
 }
 
 .popup {
@@ -84,7 +84,7 @@ $breakpoint-xsl: 1200px;
                 width: 100%;
 
                 h1 {
-                    font-family: 'Lato-Italic';
+                    font-family: Lato-Italic;
                     font-size: 23px;
                     text-align: center;
                     margin-top: 15px;
@@ -102,7 +102,7 @@ $breakpoint-xsl: 1200px;
     flex-direction: column;
 
     h1 {
-        font-family: 'Lato';
+        font-family: Lato;
         text-align: center;
         letter-spacing: 5px;
         color: cadetblue;

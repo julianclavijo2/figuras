@@ -1,15 +1,15 @@
 @font-face {
-  font-family: 'Lato';
+  font-family: Lato;
   src: url("../Fonts/Lato-Bold.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: 'Lato-Italic';
+  font-family: Lato-Italic;
   src: url("../Fonts/Lato-Italic.ttf") format("truetype");
 }
 
 .title p, .body .formSquare label, .body .formSquare p {
-  font-family: 'Lato-Italic';
+  font-family: Lato-Italic;
 }
 
 .popup {
@@ -65,7 +65,7 @@
 }
 
 .popup .shadow .content-popup .body-content h1 {
-  font-family: 'Lato-Italic';
+  font-family: Lato-Italic;
   font-size: 23px;
   text-align: center;
   margin-top: 15px;
@@ -89,7 +89,7 @@
 }
 
 .title h1 {
-  font-family: 'Lato';
+  font-family: Lato;
   text-align: center;
   letter-spacing: 5px;
   color: cadetblue;
